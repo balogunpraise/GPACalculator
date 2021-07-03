@@ -7,17 +7,17 @@ namespace GPACalculator
 {
     public static class TableClass
     {
-        private const int tableWidth = 80;
+        private const int tableWidth = 97;
 
         public static void PrintLines()
         {
-            Console.WriteLine(new string('-', tableWidth));
+            Console.WriteLine(new string('-', tableWidth)); // I did this because i want th character to be printed for the number of times of tableWidth
         }
 
 
-        public static void Rows(params string[] columns)
+        public static void Rows(params string[] columns) //I included params because i do not know the amount of the input. 
         { 
-            int columnWidth = (tableWidth - columns.Length) / columns.Length;
+            int columnWidth = (tableWidth - columns.Length) / columns.Length; //Defining the length of the column width
 
             const string bar = "|";
 

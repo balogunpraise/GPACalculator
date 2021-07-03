@@ -6,9 +6,17 @@ namespace GPACalculator
     {
         static void Main(string[] args)
         {
+            LinkMethod newLink = new LinkMethod();
+            newLink.NewMethod();
+
+
+
             TableClass.PrintLines();
-            TableClass.Rows("COURSE & CODE", "COURSE UNIT", "GRADE", "GRADE UNIT", "WEIGTH Pt", "REMARK");
+            TableClass.Rows("COURSE-CODE", "COURSE UNIT", "GRADE", "GRADE UNIT", "WEIGTH Pt", "REMARK");
             TableClass.PrintLines();
+
+           
+            
         }
     }
 }
